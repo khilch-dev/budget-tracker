@@ -1,4 +1,4 @@
-public class BudgetCategory {
+public class BudgetCategory implements Comparable<BudgetCategory> {
     private String category;
     private double limit;
     private double spent;
@@ -33,10 +33,21 @@ public class BudgetCategory {
         this.spent = spent;
     }
 
+    // toString method
     @Override
     public String toString() {
         return category + 
         " | Limit: $" + String.format("%.2f", limit) + 
         ", Spent: $" + String.format("%.2f", spent);
+    }
+
+    @Override
+    public int compareTo(BudgetCategory other) {
+        // sourced from previous ask an AI chat
+        // https://chatgpt.com/share/6ac5e8b0-d8dc-83e8-a429-7e1418269307
+        double difference = spent - limit;
+        double otherDifference = other.spent - other.limit;
+
+        return Double.compare(difference, otherDifference);
     }
 }

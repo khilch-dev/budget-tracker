@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -33,7 +34,9 @@ public class BudgetApp {
 
 
         }
-        
+
+        // Sort the ArrayList
+        Collections.sort(categories);
         System.out.println(categories);
     }
 
