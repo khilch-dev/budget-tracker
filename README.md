@@ -29,7 +29,7 @@ Make sure to add, commit and push your code! You may end up making multiple comm
 
 ## Wave 2: BudgetApp Refactor
 
-Comment out your validation code where you manually created a category at the top of the BudgetApp main method. Uncomment the logic that was there when you first cloned the repo. Delete the print statements inside the `for` loop. Instead, make a list of BudgetCategory instances and add each of the categories scanned in the loop. After the loop, print the whole list. Run your code and validate that it works.
+Comment out your validation code where you manually created a category at the top of the BudgetApp main method. Uncomment the logic that was there when you first cloned the repo. Delete the print statements inside the `while` loop. Instead, make a list of BudgetCategory instances and add each of the categories scanned in the loop. After the loop, print the whole list. Run your code and validate that it works.
 
 Make sure to add, commit and push your code!
 
