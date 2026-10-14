@@ -1,0 +1,3 @@
+[Dining Out | Limit: $120.00, Spent: $185.00, Entertainment | Limit: $80.00, Spent: $115.00, Utilities | Limit: $150.00, Spent: $165.00, Rent | Limit: $1350.00, Spent: $1350.00, Transportation | Limit: $200.00, Spent: $190.00, Groceries | Limit: $400.00, Spent: $375.00]
+Budget difference: $80.0
+Average difference: $13.33
