@@ -38,6 +38,7 @@ public class BudgetApp {
         System.out.println(categories);
 
         System.out.println("Budget difference: $" + (double) budgetDifference(categories));
+        System.out.printf("Average difference: $%.2f%n", averageDifference(categories));
     }
 
     /**
@@ -64,4 +65,23 @@ public class BudgetApp {
         // return the difference
         return totalDifference;
     }
+
+    // Wave 5, average over/under budget
+    public static double averageDifference(List<BudgetCategory> categories) {
+        return (double) budgetDifference(categories) / categories.size();
+    }
+
+    // // Wave 5, budget chart method (doing myself for fun)
+    // public static void budgetChart(List<BudgetCategory> categories) {
+    //     for (int i = 0; i < categories.size(); i++) {
+    //         // get the category at i
+    //         BudgetCategory category = categories.get(i);
+
+    //         // calculate stars based on the spent amount, we'll go with 50
+    //         int stars = (int) (category.getSpent()) / 50;
+
+    //         // print the category
+    //         System.out.println(category.getCategory() + " | Stars: " + "*".repeat(stars));
+    //     }
+    // }
 }
